@@ -1,0 +1,622 @@
+
+/* ===========================================
+========== HEADER AREA CSS START =============
+=============================================*/
+
+
+/* top header */
+
+
+.header-top {
+    background:var(--bgBlack);
+    color:var(--fontColorWhite);
+    line-height: 50px;
+}
+.header_top_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* header bottom */
+
+.header_bottom {
+    padding: 10px 0px;
+    line-height: 40px;
+    position: relative;
+}
+.logoWrapper{
+    position: relative;
+}
+.logo {
+    position: absolute;
+    z-index: 1;
+    top: -55px;
+    left: 0;
+}
+
+.navListArea {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.navLink {
+    padding: 10px 20px;
+    display: inline-block;
+    color:var(--fontColorBlack);
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+.navLink::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:0px;
+    height: 2px;
+    background-color:var(--bgRed);
+    visibility: none;
+    opacity:0;
+    transition: .3s;
+}
+.navLink:hover {
+    color:var(--fontColorOrange);
+}
+.navLink:hover:after {
+    visibility: visible;
+    opacity:1;
+    width: 100px;
+}
+
+.SocialNavList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.socialLink {
+    padding: 4px 8px;
+    display: inline-block;
+    transform: scale(1);
+    transition: .5s linear;
+}
+.socialLink:hover i{
+    color:var(--fontColorOrange); 
+    transform: translateX(-2px) scale(1.2);
+}
+.mainNavWraper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.icons {
+    font-size: var(--fSize17);
+    color: var(--fontColorWhite);
+}
+
+.searchIcons{
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    background: #eee;
+    border-radius: 30px;
+}
+.twitterIcons{
+    color:var(--fontColorOrange) !important;
+} 
+.mainNavInnerItem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* toggle icons */
+.NavToggler{
+    display: none;
+}
+.NavToggler {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(252, 244, 244);
+}
+.toggleMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.toggleItem {
+    width: 25px;
+    height: 2px;
+    background: #000;
+    text-align: center;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.navListArea {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+/* ===========================================
+========== HEADER AREA CSS END =============
+=============================================*/
+
+
+/* ===========================================
+========= GALLERY ITEMS START ===============
+============================================= */
+.overlay{
+    position: relative;
+}
+.overlay::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+   
+}
+
+.galleryItems {
+    position: relative;
+    height: 100%;
+}
+.galleryItems figure{
+    height: 100%;
+}
+.galleryItems img {
+    width: 100%;
+    height: 100%;
+}
+.gallery_content {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    padding: 10px 10px 10px 10px;
+}
+.tech {
+    background: var(--bgOrange);
+    border: 1px solid var(--bgOrange);
+    color: var(--fontColorWhite);
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    padding:0px 12px;
+    font-size: var(--fSize12);
+    transition: .3s;
+}
+
+.tech:hover {
+    background-color: transparent;
+    color:var(--fontColorWhite);
+}
+.popularButton{
+    background: var(--bgOrange);
+    color: var(--fontColorWhite);
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    padding:0px 12px;
+    font-size: var(--fSize12); 
+}
+.gallery_title {
+    max-width: 350px;
+    width: 100%;
+    font-size:var(--fSize15);
+    line-height: 20px;
+    color: var(--fontColorWhite);
+    text-transform: capitalize;
+}
+.gallery_info {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.galleryPerson {
+    display: flex;
+    align-items: center;
+    
+}
+.galleryPerson img {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    margin-right: 5px;
+    object-fit: cover;
+}
+.galleryDate span{
+    color:var(--fontColorWhite);
+}
+.galleryDate span .calender {
+    font-size:var(--fSize15);
+    margin-right: 5px;
+}
+
+
+
+.galleryItemsTwo {
+    height: 100%;
+}
+.galleryItemsTwo figure {
+    margin: 0;
+    height: 100%;
+}
+.galleryItemsTwo img{
+
+    object-fit: cover;
+}
+
+/* owl nav */
+.owl-nav.disabled {
+    display: block !important;
+}
+.owl-carousel .owl-nav {
+    display: none;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: red;
+}
+.owl-theme .owl-nav {
+    margin-top:0px !important;
+}
+.owl-carousel .owl-nav button.owl-prev,
+ .owl-carousel .owl-nav button.owl-next {
+    background: 0 0;
+    color: var(--fontColorGray);
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #eee;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ===========================================
+========= GALLERY ITEMS END ===============
+============================================= */
+
+
+
+/* ==========================================
+============ TRENDING AREA START ============
+============================================ */
+.textWrapper {
+    padding: 50px 0px;
+    text-align: center;
+}
+h2.latestPostTitle {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: 0px 2px 3px #867f7f;
+}
+.trending_top_wwrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60px;
+}
+.trending_icons {
+    max-width: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.trending_icons span .arrow{
+    font-size:var(--fSize20);
+    color:#333;
+}
+.trending_bottom_wrapper {
+    position: relative;
+}
+figure {
+    position: relative;
+}
+.trend {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.trending_bottom_wrapper img {
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+}
+.trend_title {
+    font-size:var(--fSize17);
+    font-weight: 600;
+}
+.byDate {
+    font-size: 12px;
+}
+.trendTxt {
+    font-size:var(--fSize13);
+    color:var(--fontColorGray);
+}
+.form-check-inline {
+    display: inline-block;
+    margin-right: 1rem;
+    line-height: 12px !important;
+}
+.form-check .form-check-input {
+    float: left;
+    margin-left: 0px;
+    font-size: 8px;
+}
+
+/* latest post */
+
+.latestpostSection{
+    background: #eee;
+}
+
+
+.latest_info{
+    width: 100%;
+}
+.latestPostTxt,
+ .latestPostDate span{
+    color: var(--fontColorGray);
+    font-size:var(--fSize12);
+}
+.latestPostDate span:first-child {
+    border-right: 2px solid var(--fontColorGray);
+    margin-right: 4px;
+ 
+    padding-right: 8px;
+}
+
+
+/* popular post */
+
+.popularPostWrapper{
+    border: 1px solid #DDDDDD;
+}
+.popuHeading {
+    height: 70px;
+    background: var(--bgWhite);
+    box-shadow: 0px 2px 1px #e9d6d6;
+    text-shadow: 0px 2px 3px #867f7f;
+}
+.popuTitle {
+    text-align: center;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size:var(--fSize20);
+    font-weight: 600;
+}
+.popularSinglePost {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding: 0px 10px;
+}
+.popularSinglePost::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:calc( 100% - 40px );
+    height: 1px;
+    background:#DDDDDD;
+}
+.popularImage {
+    width: 85px;
+    height: 100%;
+    text-align: center;
+}
+.popularImage img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50% !important;
+    object-fit: cover;
+}
+.popuHeadingTxt {
+    font-size: var(--fSize14);
+    font-weight: 600;
+    
+}
+.date {
+    font-size:var(--fSize14);
+    color:var(--fontColorGray);
+}
+.calenders{
+    margin-right: 3px;
+    color:var(--fontColorWhite);
+}
+.calender {
+    margin-right: 3px;
+    color:var(--fontColorGray);
+}
+
+/* ==========================================
+============ TRENDING AREA END ============
+============================================ */
+
+
+
+/* ==========================================================
+=================== FOOTER AREA CSS  START ==================
+============================================================ */
+
+/* footer top */
+.footer_top {
+    background: var(--bgOrange);
+    padding: 50px 0px;
+}
+.footer_top_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subHeading {
+    max-width: 100%;
+    width: 100%;
+    font-size: 22px;
+    color:var(--fontColorWhite);
+    text-align: center;
+}
+.subscribeBtn {
+    position: relative;
+}
+.subscribeInputBtn {
+    padding: 2px 4px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+.subscribeNow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px;
+    border: none;
+    outline: none;
+    background: var(--bgBlack);
+    color: var(--fontColorWhite);
+    border-radius: 30px;
+    padding: 4px 8px;
+    font-size: var(--fSize14);
+    text-transform: uppercase;
+}
+.subscribeNow:focus{
+    outline: none;
+}
+
+/* main footer */
+.mainFooterWrapper {
+    display: grid;
+    place-items: center;
+    padding: 50px 0px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+}
+.footer_main{
+    position: relative;
+}
+.footer_main::after {
+    content: "";
+    position: absolute;
+    height: 97%;
+    background-image: url(../image/logo/Footer-after-vector.png);
+    width: 55%;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+    z-index: -111;
+}
+.footer_main::before {
+    content: "";
+    position: absolute;
+    background-image: url(../image/logo/footer-before.png);
+    width: 50%;
+    height: 88%;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 0;
+    opacity: .3;
+    z-index: -111;
+}
+.f_title {
+    color:var(--fontColorGray);
+    text-align: center;
+}
+.mainFooterSocialIconsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mainFooterNavLink{
+    
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+.mainFooterIcons {
+    background:var(--bgOrange);
+    color:var(--fontColorWhite);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 999;
+}
+.mainFooterNavLink:hover > .mainFooterIcons{
+    background:var(--bgBlack) ;
+
+}
+/* footer bottom */
+.footer_bottom {
+    background:var(--bgBlack);
+    padding: 15px 0px;
+}
+.navListArea {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.FooterNavLink {
+    color: var(--fontColorWhite);
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: var(--fSize12);
+  
+}
+.FooterNavLink:hover{
+    color: var(--fontColorWhite) !important;
+
+}
+.footerBottomReserverTxt {
+    color: var(--fontColorWhite);
+}
+/* ==========================================================
+=================== FOOTER AREA CSS  END ==================
+============================================================ */
+/* .bottmSocialIcons{
+    color: var(--fontColorBlack);
+}
+.bottmSocialIcons:hover{
+    color: var(--fontColorOrange) !important;
+} */
+/* .bottmSocialLink:hover i {
+    color: var(--fontColorOrange) !important;
+    transform: translateX(-2px) scale(1.2) !important;
+} */

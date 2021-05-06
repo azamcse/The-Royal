@@ -1,0 +1,41 @@
+
+
+:root{
+    /* bg color */
+    --bgBlue:#008ED2;
+    --bgOrange:#FFAC60;
+    --bgBlack:#000;
+    --bgWhite:#fff;
+    --bgRed:rgb(255, 0, 0);
+
+
+    /* font color */
+    --fontColorWhite:#fff;
+    --fontColorBlack:#000;
+    --fontColorGray:#666;
+    --fontColorOrange:#FFAC60;
+    
+
+    /* FONT SIZE */
+
+    --fSize12:12px;
+    --fSize13:13px;
+    --fSize14:14px;
+    --fSize15:15px;
+    --fSize16:16px;
+    --fSize17:17px;
+    --fSize18:18px;
+    --fSize19:19px;
+    --fSize20:20px;
+    --fSize21:21px;
+    --fSize22:22px;
+    --fSize23:23px;
+    --fSize24:24px;
+    --fSize25:25px;
+    --fSize26:26px;
+    --fSize27:27px;
+    --fSize28:28px;
+    --fSize29:29px;
+    --fSize30:30px;
+
+}

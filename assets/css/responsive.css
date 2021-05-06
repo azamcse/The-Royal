@@ -1,0 +1,107 @@
+
+
+@media only screen and (max-width: 992px) {
+
+
+    /* latest post */
+    .popularImage {
+        width: 60px;
+    }
+    .popularImage img {
+        width: 50px;
+        height: 50px;
+    }
+    .popuHeadingTxt {
+        font-size: 14px;
+    }
+    .tech {
+        padding: 2px 13px;
+        font-size: 12px;
+    }
+    .date {
+        font-size: 13px;
+    }
+      /* footer bottom */
+     .footerBottomReserverTxt {
+        text-align: center;
+    }
+    .navListArea {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* .toggleMenu{
+        display: block;
+    } */
+    .mainNavInnerItem {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        display: block;
+    }
+    .NavToggler{
+        display: block;
+    }
+   .toggleMenu{
+       
+       margin-top: 14px;
+       margin-left: 2px;
+   }
+
+    .header_bottom {
+        padding: 25px 0px;
+      
+    }
+    .header_bottom {
+ 
+        position: relative !important;
+    }
+    .mainNavInnerItem {
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        position: fixed !important;
+        top: 0 !important;
+        left:-100%;
+        height:100vh ;
+        z-index: 1 !important;
+        background-color: var(--bgOrange);
+        transition: all .3s linear;
+        z-index: 9999;
+    }
+    .mainNavInnerItemToggle{
+        left: 0;
+    }
+    .navListArea {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 400px;
+        flex-direction: column;
+    }
+    .overlayArea{
+        position: fixed;
+        width:calc(100% - 400px);
+        height: 100vh;
+        top:0;
+        left:0;
+        background-color: #000;
+        opacity: .5;
+        z-index: -1;
+        display: none;
+        margin-left:400px;
+    }
+    .mainNavInnerItemToggle .overlayArea{
+        display: block;
+    }
+    .navLink:hover {
+        color: var(--fontColorWhite) !important;
+    }
+    .searchIcons {
+      display: none;
+    }
+   
+}
